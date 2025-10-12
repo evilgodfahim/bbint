@@ -3,12 +3,12 @@ const fs = require('fs');
 const crypto = require('crypto');
 
 const apiURLs = [
-  "https://bonikbarta.com/api/post-filters/17?root_path=00000000010000000001",
+  "https://bonikbarta.com/api/post-lists/17?root_path=00000000010000000001",
   "https://bonikbarta.com/api/post-lists/18?root_path=00000000010000000001",
   "https://bonikbarta.com/api/post-lists/19?root_path=00000000010000000001",
   "https://bonikbarta.com/api/post-lists/20?root_path=00000000010000000001",
   "https://bonikbarta.com/api/post-lists/21?root_path=00000000010000000001",
-  "https://bonikbarta.com/api/post-filters/22?root_path=00000000010000000001",
+  "https://bonikbarta.com/api/post-lists/22?root_path=00000000010000000001",
   "https://bonikbarta.com/api/post-lists/23?root_path=00000000010000000001"
 ];
 
