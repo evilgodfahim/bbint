@@ -9,8 +9,7 @@ const apiURLs = [
   "https://bonikbarta.com/api/post-lists/20?root_path=00000000010000000001",
   "https://bonikbarta.com/api/post-lists/21?root_path=00000000010000000001",
   "https://bonikbarta.com/api/post-filters/22?root_path=00000000010000000001",
-  "https://bonikbarta.com/api/post-lists/23?root_path=00000000010000000001",
-  "https://bonikbarta.com/api/post-lists/24?root_path=00000000010000000001" 
+  "https://bonikbarta.com/api/post-lists/23?root_path=00000000010000000001"
 ];
 
 const baseURL = "https://bonikbarta.com";
