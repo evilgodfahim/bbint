@@ -6,8 +6,15 @@
     <atom:link href="https://bonikbarta.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Latest articles from Bonikbarta</description>
     <language>bn</language>
-    <lastBuildDate>Wed, 15 Oct 2025 08:15:58 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 08:46:11 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Generator</generator>
+    <item>
+      <title>মাদাগাস্কারে সামরিক অভ্যুত্থান: জেনজি আন্দোলনের মধ্যেই ক্ষমতা দখল করল সেনাবাহিনী</title>
+      <link>https://bonikbarta.com/international/Fgs7UdIst2LuLlfc/</link>
+      <description><![CDATA[সেনাবাহিনী এখন একটি অন্তর্বর্তী সরকার গঠন করবে, দুই বছরের মধ্যে নির্বাচন আয়োজন করবে। একইসঙ্গে নির্বাচন কমিশনসহ বেশ কয়েকটি গণতান্ত্রিক প্রতিষ্ঠান স্থগিতের ঘোষণা দেয়া হয়েছে।]]></description>
+      <pubDate>Wed, 15 Oct 2025 08:24:59 GMT</pubDate>
+      <guid isPermaLink="false">8ff3a2988a7fae537a577015ffb52138</guid>
+    </item>
     <item>
       <title>আরো চার ইসরায়েলি বন্দির মরদেহ হস্তান্তর করল হামাস, যুদ্ধবিরতির ভবিষ্যৎ নিয়ে শঙ্কা</title>
       <link>https://bonikbarta.com/international/4q5LHzq1cHEJOCI7/</link>
@@ -294,13 +301,6 @@
       <description><![CDATA[আন্তর্জাতিক অভিবাসন সংস্থার সাম্প্রতিক হিসাব অনুযায়ী, গত বছরের ডিসেম্বর থেকে চলতি বছরের মে মাস পর্যন্ত প্রায় ১২ লাখ মানুষ সুদানে ফিরেছেন। কিন্তু এখনো ১ কোটি ২০ লাখেরও বেশি মানুষ বাস্তুচ্যুত অবস্থায় আছে, যাদের মধ্যে ৩২ লাখ সুদানি প্রতিবেশী দেশগুলোতে আশ্রয় নিয়েছেন।]]></description>
       <pubDate>Mon, 25 Aug 2025 07:33:30 GMT</pubDate>
       <guid isPermaLink="false">2e1a2ac7e922da45b00d9d76253fe1e3</guid>
-    </item>
-    <item>
-      <title>কঙ্গোয় বিদ্রোহীদের হামলায় নিহত অন্তত ৫২ জন</title>
-      <link>https://bonikbarta.com/international/OKANS087K7SwPSPa/</link>
-      <description><![CDATA[এই হামলার নিন্দা জানিয়ে শান্তিরক্ষা মিশনের মুখপাত্র বলেন, তারা ঘটনাটিকে ‘যতোটা সম্ভব কঠোর ভাষায়’ নিন্দা করছে।]]></description>
-      <pubDate>Tue, 19 Aug 2025 11:22:40 GMT</pubDate>
-      <guid isPermaLink="false">18c6e37a91258dd03e2cbd133720414a</guid>
     </item>
   </channel>
 </rss>
