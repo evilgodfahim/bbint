@@ -1,5 +1,6 @@
 const fs = require('fs');
 const crypto = require('crypto');
+const fetch = require('node-fetch'); // ensure node-fetch installed
 
 const apiURLs = [
   "https://bonikbarta.com/api/post-lists/17?root_path=00000000010000000001",
@@ -12,8 +13,8 @@ const apiURLs = [
 ];
 
 const baseURL = "https://bonikbarta.com";
-const siteURL = "https://bonikbarta.com";
-const feedURL = "https://bonikbarta.com/feed.xml";
+const siteURL = baseURL;
+const feedURL = `${baseURL}/feed.xml`;
 
 // Fetch all posts
 async function fetchAll() {
@@ -24,31 +25,25 @@ async function fetchAll() {
       const res = await fetch(url, {
         headers: { 'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json' }
       });
-
       const text = await res.text();
 
-      // Skip non-JSON responses
       if (!text.trim().startsWith('{')) {
         console.error("⚠️ Non-JSON response from", url);
         continue;
       }
 
       const data = JSON.parse(text);
-
-      const items = (data.posts && Array.isArray(data.posts))
-        ? data.posts
-        : ((data.content && data.content.items) || []);
-
+      const items = Array.isArray(data.posts) ? data.posts : [];
       allItems = allItems.concat(items);
     } catch (err) {
       console.error("❌ Failed to load from", url, err);
     }
   }
 
-  // Sort by latest publish date
+  // Sort by latest published date
   allItems.sort((a, b) => new Date(b.first_published_at) - new Date(a.first_published_at));
 
-  // Remove duplicates by link
+  // Deduplicate by article URL
   const seenLinks = new Set();
   const uniqueItems = [];
   for (const item of allItems) {
@@ -65,7 +60,8 @@ async function fetchAll() {
 
 // Generate GUID
 function generateGUID(item) {
-  const str = (item.title || '') + (item.excerpt || '') + (item.first_published_at || '');
+  // use title + summary + publish date
+  const str = (item.title || '') + (item.summary || '') + (item.first_published_at || '');
   return crypto.createHash('md5').update(str).digest('hex');
 }
 
@@ -90,7 +86,7 @@ function generateRSS(items) {
     const articleUrl = baseURL + fullLink;
     const pubDate = item.first_published_at ? new Date(item.first_published_at).toUTCString() : nowUTC;
     const title = (item.title || "No title").replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const description = item.excerpt || item.summary || "No description available";
+    const description = item.summary || item.sub_title || "No description available";
     const guid = generateGUID(item);
 
     rss += `    <item>
