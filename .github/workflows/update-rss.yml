@@ -30,7 +30,7 @@ jobs:
 
       # 4. Generate RSS Feed
       - name: Generate RSS Feed
-        run: node generate-rss-playwright.js || exit 1
+        run: node generate-rss.js || exit 1
 
       # 5. Configure Git
       - name: Configure Git
