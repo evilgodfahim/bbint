@@ -25,7 +25,12 @@ function generateGUID(item) {
 // Convert API post to RSS item
 function postToRSSItem(post) {
   const title = post.title || "No title";
-  const link = baseURL + (post.url_path || "/");
+  
+  // Clean up the URL path - remove /home/ prefix if it exists
+  let urlPath = post.url_path || "/";
+  urlPath = urlPath.replace(/^\/home\//, '/');
+  
+  const link = baseURL + urlPath;
   const description = post.summary || post.sub_title || "No description";
   const pubDate = post.first_published_at
     ? new Date(post.first_published_at).toUTCString()
@@ -123,7 +128,7 @@ async function fetchJSONWithPlaywright(page, url) {
 
   collected.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
-  const rssXML = generateRSS(collected.slice(0, 500)); // latest 50 articles
+  const rssXML = generateRSS(collected.slice(0, 500)); // latest 500 articles
   fs.writeFileSync("feed.xml", rssXML, "utf8");
 
   console.log(`✅ RSS feed updated with ${collected.length} unique items.`);
