@@ -6,8 +6,15 @@
     <atom:link href="https://bonikbarta.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Latest articles from Bonikbarta</description>
     <language>bn</language>
-    <lastBuildDate>Sat, 06 Jun 2026 10:14:21 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 12:11:47 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Generator</generator>
+    <item>
+      <title><![CDATA[অস্ট্রেলিয়ায় হাঙরের আক্রমণে এক ব্যক্তির মৃত্যু]]></title>
+      <link>https://bonikbarta.com/international/5VB7EgcyRKvaeaM2/</link>
+      <description><![CDATA[পুলিশ জানিয়েছে, পশ্চিম অস্ট্রেলিয়ার অ্যালবানি শহরের কাছে মাইকেলমাস দ্বীপের দক্ষিণ উপকূলে পরিবারের সদস্যদের সঙ্গে বর্শা দিয়ে মাছ শিকার করছিলেন ওই ব্যক্তি। এ সময় একটি হাঙর তাকে আক্রমণ করে।]]></description>
+      <pubDate>Sat, 06 Jun 2026 10:29:55 GMT</pubDate>
+      <guid isPermaLink="false">5a40a60a55213abf6474feee07217204</guid>
+    </item>
     <item>
       <title><![CDATA[কুয়েত বিমানবন্দর এলাকা ও বাহরাইনে বিস্ফোরণের শব্দ]]></title>
       <link>https://bonikbarta.com/international/py2nt9KWRIso3ptq/</link>
@@ -294,13 +301,6 @@
       <description><![CDATA[নতুন এ কর্মসূচির আওতায় অতিরিক্ত, সদ্য নিষিদ্ধ ও অবৈধ আগ্নেয়াস্ত্র সরকার কিনে নেবে। কয়েক লাখ আগ্নেয়াস্ত্র সংগ্রহ শেষে ধ্বংস করার পরিকল্পনা রয়েছে সরকারের।]]></description>
       <pubDate>Fri, 19 Dec 2025 12:03:00 GMT</pubDate>
       <guid isPermaLink="false">6b9523ef150ea66347129de4b285f149</guid>
-    </item>
-    <item>
-      <title><![CDATA[বন্ডি সৈকত ট্র্যাজেডি: ১৫ জন নিহত হয়েছেন বাবা-ছেলের গুলিতে]]></title>
-      <link>https://bonikbarta.com/international/TCEa1SB2IMm6NpB0/</link>
-      <description><![CDATA[প্রত্যক্ষদর্শীরা জানান, প্রায় ১০ মিনিট ধরে হামলা চলে। নিহতদের বয়স ১০ থেকে ৮৭ বছরের মধ্যে। আরো ৪০ জন হাসপাতালে ভর্তি, যাদের মধ্যে দুই পুলিশ সদস্যও রয়েছেন।]]></description>
-      <pubDate>Mon, 15 Dec 2025 03:21:00 GMT</pubDate>
-      <guid isPermaLink="false">cf37ce4fc23b8f2eb97d8c59c27d2a71</guid>
     </item>
   </channel>
 </rss>
